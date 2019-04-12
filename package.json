@@ -1,0 +1,23 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liviupreda/sass-natours.git"
+  },
+  "author": "Liviu Preda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liviupreda/sass-natours/issues"
+  },
+  "homepage": "https://github.com/liviupreda/sass-natours#readme",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
