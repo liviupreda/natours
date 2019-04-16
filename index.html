@@ -398,6 +398,53 @@
       </section>
     </main>
 
+    <!-- FOOTER -->
+
+    <footer class="footer">
+      <div class="footer__logo-box">
+        <img src="img/logo-green-2x.png" alt="Full logo" class="footer__logo" />
+      </div>
+      <div class="row">
+        <div class="col-1-of-2">
+          <div class="footer__navigation">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Company</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Contact Us</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Careers</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Privacy Policy</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Terms</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-1-of-2">
+          <p class="footer__copyright">
+            Built by
+            <a href="https://liviupreda.me" target="_blank" class="footer__link"
+              >Liviu Preda</a
+            >
+            for the online course
+            <a
+              href="https://www.udemy.com/advanced-css-and-sass/"
+              target="_blank"
+              class="footer__link"
+              >Advanced CSS and Sass</a
+            >
+            on Udemy. Copyright &copy; <span id="year"></span> Natours
+          </p>
+        </div>
+      </div>
+    </footer>
+
     <!-- FLOAT GRID CLASSES -->
     <!-- <section class="grid-test">
       <div class="row">
@@ -461,5 +508,15 @@
         </div>
       </div>
     </section> -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      // Get current year for copyright
+      $('#year').text(new Date().getFullYear());
+    </script>
   </body>
 </html>
