@@ -28,7 +28,7 @@
     display: table-cell;
 
     @include respond(phone) {
-      display: none;
+      display: table-row;
     }
   }
 
@@ -39,13 +39,19 @@
     padding: 3rem 5rem;
 
     @include respond(phone) {
-      width: 100%;
+      display: table-row;
     }
   }
 
   &__img {
     display: block;
     width: 100%;
+
+    @include respond(phone) {
+      display: inline-block;
+      // float: left;
+      width: 50%;
+    }
   }
 
   &__text {
@@ -66,7 +72,7 @@
     -webkit-hyphens: auto;
     hyphens: auto;
 
-    @include respond(phone) {
+    @include respond(tab-port) {
       -moz-column-count: 1;
       column-count: 1;
     }

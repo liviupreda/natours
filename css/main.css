@@ -552,7 +552,7 @@ body {
     display: table-cell; }
     @media (max-width: 37.5em) {
       .popup__left {
-        display: none; } }
+        display: table-row; } }
   .popup__right {
     width: 66.6666667%;
     display: table-cell;
@@ -560,10 +560,14 @@ body {
     padding: 3rem 5rem; }
     @media (max-width: 37.5em) {
       .popup__right {
-        width: 100%; } }
+        display: table-row; } }
   .popup__img {
     display: block;
     width: 100%; }
+    @media (max-width: 37.5em) {
+      .popup__img {
+        display: inline-block;
+        width: 50%; } }
   .popup__text {
     font-size: 1.4rem;
     margin-bottom: 4rem;
@@ -577,7 +581,7 @@ body {
     -ms-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto; }
-    @media (max-width: 37.5em) {
+    @media (max-width: 56.25em) {
       .popup__text {
         -moz-column-count: 1;
         column-count: 1; } }
