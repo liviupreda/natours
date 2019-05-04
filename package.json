@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o css/ --recursive",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch:sass": "node-sass scss/main.scss css/style.css -w",
+    "compile:sass": "node-sass scss/main.scss css/style.comp.css",
+    "concatenate:css": "concat -o css/style.concat.css css/icon-font.css css/style.comp.css"
   },
   "repository": {
     "type": "git",
@@ -18,7 +19,10 @@
   },
   "homepage": "https://github.com/liviupreda/sass-natours#readme",
   "devDependencies": {
-    "node-sass": "^4.11.0",
+    "autoprefixer": "^9.5.1",
+    "concat": "^1.0.3",
+    "node-sass": "^4.12.0",
+    "postcss-cli": "^6.1.2",
     "tar": ">=4.4.2"
   }
 }
